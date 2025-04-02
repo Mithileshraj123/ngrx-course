@@ -67,7 +67,8 @@ const routes: Routes = [
         StoreRouterConnectingModule.forRoot({
             stateKey: 'router',
             routerState: RouterState.Minimal
-        })
+        }),
+        StoreModule.forRoot({}, {})
     ],
     bootstrap: [AppComponent]
 })
